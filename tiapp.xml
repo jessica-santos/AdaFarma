@@ -14,7 +14,7 @@
     <statusbar-hidden>false</statusbar-hidden>
     <fullscreen>false</fullscreen>
     <navbar-hidden>false</navbar-hidden>
-    <analytics>true</analytics>
+    <analytics>false</analytics>
     <guid>9ba59d6b-5b0c-4a55-9e7d-181c7800aed9</guid>
     <property name="ti.ui.defaultunit" type="string">system</property>
     <iphone>
@@ -32,7 +32,7 @@
   </android>
   <modules>
     <module version="0.3">com.mwaysolutions.barcode</module>
-    <module version="0.7">bencoding.alarmmanager</module>
+    <!--<module version="0.7">bencoding.alarmmanager</module> -->
   </modules>
   <deployment-targets>
         <target device="iphone">false</target>
