@@ -29,10 +29,23 @@
         </orientations>
     </iphone>
       <android xmlns:android="http://schemas.android.com/apk/res/android">
+      	<orientation>
+      		<orientation>Ti.UI.PORTRAIT</orientation>
+      	</orientation>
+      	<manifest>
+            <supports-screens android:anyDensity="false"/>
+            <application>
+                <receiver android:name="bencoding.alarmmanager.AlarmNotificationListener"/>
+                <receiver android:name="bencoding.alarmmanager.AlarmServiceListener"/>
+            </application>
+        </manifest>
+        <services>
+            <service type="interval" url="DisparaAlarme.js"/>
+        </services>
   </android>
   <modules>
     <module version="0.3">com.mwaysolutions.barcode</module>
-    <!--<module version="0.7">bencoding.alarmmanager</module> -->
+    <module version="0.7">bencoding.alarmmanager</module>
   </modules>
   <deployment-targets>
         <target device="iphone">false</target>

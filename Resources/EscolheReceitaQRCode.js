@@ -7,19 +7,22 @@ var titaniumBarcode = require('com.mwaysolutions.barcode');
 	});
 	
 	var image = Ti.UI.createImageView({
-  		image:'/label.png'
+		height : 100,
+		width : 100,
+	  top: '10%',
+	  image:'/label1.png'
 	});
 	
 	var barcodeButton = Titanium.UI.createButton({
     title: 'QRCode',
-    top: 500,
+    top: '60%',
  //   backgroundImage: '/addReceita.png'
     
   });
   
   var manualButton = Titanium.UI.createButton({
     title: 'Manual',
-    top: 600,
+    top: '80%',
     
   //  backgroundImage: '/addReceita.png'
     
